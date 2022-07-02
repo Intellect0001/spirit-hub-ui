@@ -12,44 +12,29 @@ local MainTab = GUI:Tab{
 	Icon = "rbxassetid://7193212718"
 }
 
-MainTab:Button{
-	Name = "Hello there " .. game.Players.LocalPlayer.Name .. ". Welcome to Spirit | South London 2",
-	Description = nil,
-	Callback = function() 
-    
-    end
+MainTab:Label{
+	Text = "Hello there " .. game.Players.LocalPlayer.Name .. ".",
+	Description = "Welcome to Spirit | South London 2"
 }
 
-MainTab:Button{
-	Name = "Want to request something? Join the server!",
-	Description = nil,
-	Callback = function() 
-    
-    end
+MainTab:Label{
+	Text = "Want to request something?",
+	Description = "Suggest it and it most likely will be added!"
 }
 
-MainTab:Button{
-	Name = "Found a bug? Report it, we will try our best to fix it ASAP.",
-	Description = nil,
-	Callback = function() 
-    
-    end
+MainTab:Label{
+	Text = "Found a bug?",
+	Description = "Report it and we will try our best to fix it ASAP."
 }
 
-MainTab:Button{
-	Name = "Spirit started in April 2022, and we are growing so fast!",
-	Description = nil,
-	Callback = function() 
-    
-    end
+MainTab:Label{
+	Text = "When did we start?",
+	Description = "Spirit started in April 2022, and we are growing so fast!"
 }
 
-MainTab:Button{
-	Name = "Spirit was made by ride#1111 & frosted#0001. dev!!!: HENNY#8674.",
-	Description = nil,
-	Callback = function() 
-    
-    end
+MainTab:Label{
+	Text = "Who owns Spirit and devs for it?",
+	Description = "Spirit was made by ride#1111 & frosted#0001. dev!!!: HENNY#8674"
 }
 
 local LocalTab = GUI:Tab{
@@ -302,6 +287,10 @@ AimlockTab:Button{
     end
 }
 
+AimlockTab:Label{
+	Text = "ESP's",
+	Description = "Reveal all players around the map."
+}
 AimlockTab:Button{
 	Name = "Chams ESP",
 	Description = "Displays all players name and position.",
